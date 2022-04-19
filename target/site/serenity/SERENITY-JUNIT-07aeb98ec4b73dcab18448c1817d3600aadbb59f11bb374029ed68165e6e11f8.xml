@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Register" skipped="0" tests="2" time="11.97" timestamp="2022-04-19 07:47:52"><testcase name="Success POST register"/><testcase name="Unsuccess POST register"/></testsuite>
