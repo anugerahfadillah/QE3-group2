@@ -1,4 +1,4 @@
-package api.stepdef.reqresin;
+package stepdef;
 
 import io.cucumber.java.en.Then;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;

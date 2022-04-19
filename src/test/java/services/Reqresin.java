@@ -1,4 +1,4 @@
-package api.service.reqresin;
+package services;
 
 import net.serenitybdd.rest.SerenityRest;
 import org.json.JSONObject;

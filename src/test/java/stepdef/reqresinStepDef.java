@@ -1,7 +1,7 @@
-package api.stepdef.reqresin;
+package stepdef;
 
 
-import api.service.reqresin.Reqresin;
+import services.Reqresin;
 import io.cucumber.java.en.And;
 
 public class reqresinStepDef {
