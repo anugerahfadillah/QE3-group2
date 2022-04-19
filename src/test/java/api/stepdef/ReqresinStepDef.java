@@ -7,7 +7,7 @@ import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInC
 import static net.serenitybdd.rest.SerenityRest.restAssuredThat;
 
 public class ReqresinStepDef {
-    Reqresin reqresinAPI = new Reqresin();
+    Reqresin reqresin = new Reqresin();
 
     //action
 
