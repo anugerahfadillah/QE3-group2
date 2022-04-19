@@ -2,15 +2,11 @@ package api.stepdef;
 
 
 import api.service.Reqresin;
-import io.cucumber.java.en.And;
-import io.cucumber.java.en.Then;
-
-
+import io.cucumber.java.en.*;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 import static net.serenitybdd.rest.SerenityRest.restAssuredThat;
 
 public class ReqresinStepDef {
-
     Reqresin reqresin = new Reqresin();
 
     // Action
@@ -28,6 +24,10 @@ public class ReqresinStepDef {
     @And("user send PUT Update request to reqresin")
     public void putUpdate() {
         reqresin.putUpdate();
+    }
+    @And("user send POST create request to reqresin")
+    public void postCreate(){
+        reqresin.postCreate();
     }
 
     //validation

@@ -7,6 +7,16 @@ public class Reqresin {
 
     private static final String REQRESIN_BASEURL = "https://reqres.in";
 
+    public void postCreate(){
+
+        JSONObject bodyJson = new JSONObject();
+
+        bodyJson.put("name", "morpheus");
+        bodyJson.put("job", "leader");
+        bodyJson.put("updatedAt", "2022-04");
+
+        SerenityRest.given().header("Content-type", "application/json").body(bodyJson.toString()).post(REQRESIN_BASEURL + "/api/users");
+    }
     public void putUpdate() {
         JSONObject bodyJSON = new JSONObject();
         bodyJSON.put("name", "morpheus");
@@ -42,6 +52,5 @@ public class Reqresin {
                 .body(bodyJson.toString())
                 .post(REQRESIN_BASEURL + "/api/register");
     }
-
 
 }
