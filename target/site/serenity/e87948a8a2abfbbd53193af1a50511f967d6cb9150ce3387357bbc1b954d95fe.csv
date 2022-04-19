@@ -1,0 +1,3 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Register","Success POST register","SUCCESS","2022-04-19T19:47:52.979+07:00[Asia/Jakarta]","0.0","11.05"
+"Register","Unsuccess POST register","SUCCESS","2022-04-19T19:48:04.046+07:00[Asia/Jakarta]","0.0","0.92"
