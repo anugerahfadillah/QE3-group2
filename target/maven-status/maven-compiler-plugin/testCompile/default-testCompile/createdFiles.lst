@@ -1,4 +1,3 @@
-services/Reqresin.class
+api/stepdef/ReqresinStepDef.class
 CucumberTestSuite.class
-stepdef/reqresinStepDef.class
-stepdef/reqresinValidationStepDef.class
+api/services/Reqresin.class

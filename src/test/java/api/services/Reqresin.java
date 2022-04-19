@@ -1,4 +1,4 @@
-package services;
+package api.services;
 
 import net.serenitybdd.rest.SerenityRest;
 import org.json.JSONObject;
@@ -31,4 +31,6 @@ public class Reqresin {
                 .body(bodyJson.toString())
                 .post(REQRESIN_BASEURL + "/api/register");
     }
+
+
 }
