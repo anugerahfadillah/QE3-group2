@@ -1,9 +1,10 @@
 package api.stepdef;
 
 
-import io.cucumber.java.en.Then;
-import api.services.Reqresin;
+import api.service.Reqresin;
 import io.cucumber.java.en.And;
+import io.cucumber.java.en.Then;
+
 
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 import static net.serenitybdd.rest.SerenityRest.restAssuredThat;
@@ -24,16 +25,24 @@ public class ReqresinStepDef {
         reqresin.postInvalidRegister();
     }
 
-    // Validation
+    @And("user send PUT Update request to reqresin")
+    public void putUpdate() {
+        reqresin.putUpdate();
+    }
+
+    //validation
+
     @Then("response status code should be {int}")
     public void statusCodeValidation(int statusCode) {
         restAssuredThat(response -> response.statusCode(statusCode));
     }
 
-    @Then("^response structure should match json schema \"([^\"]*)\"$")
+    @Then("response structure should match json schema {string}")
     public void validateJsonSchema(String schema) {
         String path = String.format("schema/%s", schema);
         restAssuredThat(response -> response.assertThat().body(matchesJsonSchemaInClasspath(path)));
     }
 
+
 }
+
